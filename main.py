@@ -1,4 +1,3 @@
-print("🔥🔥🔥 RUNNING NEW GPT VERSION v2026-02-02 🔥🔥🔥")
 import os
 import json
 import datetime
@@ -8,6 +7,8 @@ import aiosqlite
 import httpx
 from fastapi import FastAPI, Request
 from openai import OpenAI
+
+print("🔥🔥🔥 RUNNING NEW GPT VERSION v2026-02-02 🔥🔥🔥")
 
 # =========================
 # App / Config
