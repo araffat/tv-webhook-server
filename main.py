@@ -147,4 +147,4 @@ async def handle_webhook(req: Request, path: str):
     payload.setdefault("recv_ts_utc", datetime.datetime.utcnow().isoformat())
 
     # GPT 风控
-    g = await call_gpt_
+    g = await call_gpt_risk(payload)
