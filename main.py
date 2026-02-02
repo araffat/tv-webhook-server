@@ -9,8 +9,8 @@ def root():
 
 @app.post("/tv-webhook")
 async def tv_webhook(req: Request):
-    payload = await req.json()
-    print("=== TradingView Webhook Received ===")
-    print(json.dumps(payload, ensure_ascii=False, indent=2))
+    raw = await req.body()
+    text = raw.decode("utf-8", errors="ignore")
+    print("=== Webhook Received ===")
+    print(text)
     return {"ok": True}
-
